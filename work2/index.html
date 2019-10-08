@@ -1,0 +1,31 @@
+<html>
+<meta charset="utf-8">
+
+<head>
+    <title>kamiii的简单网络应用</title>
+    <link rel="stylesheet" href="./index css/base.css">
+    <link rel="stylesheet" href="./index css/index.css">
+    <script type="text/javascript" src="./js/index.js">
+    </script>
+</head>
+
+<body>
+    <div class="whole">
+        <div class="change-color">
+            <button onclick="color('red')">变红</button>
+            <button onclick="color('yellow')">变黄</button>
+            <button onclick="color('green')">变绿</button>
+            <button onclick="color('white')">变白</button>
+        </div>
+        <div class="jump-talkingroom">
+            <button id="button_register" onclick="checkpassword()">注册</button>
+            <button id="button_talkingroom" disabled=""
+                onclick="window.location.href='./talking room.html';">前往聊天室</button>
+            <span class="helptext">
+                <br>密码不能为空或者零，不然不允许跳转到聊天室。
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+.talkingbutton .top button{
+    margin: 50px 20px;
+    width: 60px;
+    height: 40px;
+}
+.talkingbutton .buttom button{
+    margin: 50px 20px;
+    width: 60px;
+    height: 40px;
+}
