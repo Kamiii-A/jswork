@@ -14,5 +14,6 @@ function input() {
     }
     else {
         alert("请给我一个正确的半径。");
+        console.log("yahoo!");
     }
 }
