@@ -6,7 +6,6 @@ function checkpassword() {
         alert('注册成功!');
         var register = document.getElementById("button_register");
         var talkingroom = document.getElementById("button_talkingroom");
-        var storage = true;
         register.setAttribute("disabled", "");
         talkingroom.removeAttribute("disabled");
     }
