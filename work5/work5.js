@@ -21,9 +21,9 @@ str2 += "</table>"
 document.getElementById("table2").innerHTML = str2;
 
 str3 = "<table border='1'>"
-for(let i=1;i<=9;++i){
+for(let i=9;i>0;--i){
     str3 += "<tr>"
-    for(let j=1;j<=i;++j){
+    for(let j=i;j>0;--j){
         str3 += "<td>" + j + "*" + i + "=" + (j * i) + "</td>"
     }
     str3 += "</tr>"
