@@ -14,8 +14,8 @@ function fact(n) {
 }
 function odd(n) {
     let sum = 1
-    for (let i = 1; i <= n;++i) {
-        sum *= 2*i+1
+    for (let i = 1; i <= n; ++i) {
+        sum *= 2 * i + 1
     }
     return sum
 }
