@@ -1,12 +1,14 @@
-function sort(method){
-    let origin = document.getElementById("origin").value
+function sort(method) {
+    let origin = document.getElementById('origin').value
     let logs
-    console.log(method)
-    if(method == "bubble"){
+
+    if (method === 'bubble') {
         logs = bubbleSort(origin)
-    }else if(method == "insert"){
+    }
+    else if (method === 'insert') {
         logs = insertSort(origin)
     }
+    showDiv = document.getElementById('Anim')
+    logValues = logs.values()
+    setTimeout("showLog(logValues,showDiv)", 50)
 }
-showDiv = document.getElementById("Anim")
-showDiv.innerHTML = logs
