@@ -1,4 +1,4 @@
-let endseconds = new Date().getTime() + 15 * 1000;
+// let endseconds = new Date().getTime() + 15 * 1000;
 let nowtime = new Date();
 let d = h = m = s = 0;
 m = 59-nowtime.getMinutes();
@@ -7,16 +7,16 @@ let id = setInterval(seckill, 1000);
 
 function seckill() {
     // let nowtime = new Date();
-    let remaining = parseInt((endseconds - nowtime.getTime()) / 1000);
-    if (remaining > 0) {
-        d = parseInt(remaining / 86400);
-        h = parseInt((remaining / 3600) % 24);
+    // let remaining = parseInt((endseconds - nowtime.getTime()) / 1000);
+    // if (remaining > 0) {
+    //     d = parseInt(remaining / 86400);
+    //     h = parseInt((remaining / 3600) % 24);
         
         if(s == 0){
             s = 59;
             --m;
         }else{
-            --s;
+            s--;
         }
         if(m == 0){
             m = 59;
@@ -26,12 +26,12 @@ function seckill() {
         // h = h < 10 ? '0' + h : h;
         m = m < 10 ? '0' + m : m;
         s = s < 10 ? '0' + s : s;
-    } else {
-        clearInterval(id);
-        d = h = m = s = '00';
-    }
-    document.getElementById('d').innerHTML = d + '天';
-    document.getElementById('h').innerHTML = h + '时';
+    // } else {
+    //     clearInterval(id);
+    //     d = h = m = s = '00';
+    // }
+    document.getElementById('d').innerHTML = d + '0天';
+    document.getElementById('h').innerHTML = h + '0时';
     document.getElementById('m').innerHTML = m + '分';
     document.getElementById('s').innerHTML = s + '秒';
 }
